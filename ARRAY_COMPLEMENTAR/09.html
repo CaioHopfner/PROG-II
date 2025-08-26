@@ -16,10 +16,15 @@
     
     //ENTRADA
     let timeTitular = ["Phoenix", "Jett", "Sova", "Sage", "Cypher"];
+    const questaoEntrar = prompt("Qual titular vai entrar?")
+    const questaoSair = prompt("Qual titular vai sair?")
 
     //PROCESSAMENTO
+    localizacao = timeTitular.indexOf(questaoSair)
+    timeTitular.splice(localizacao, 1, questaoEntrar)
 
 
     //SAÍDA
+    alert(timeTitular)
     
 </script>

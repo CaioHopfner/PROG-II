@@ -1,0 +1,28 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: PROCURAR LETRA
+    Peça para o usuário digitar UMA palavra.
+    Peça para o usuário digitar a letra que deseja encontrar na palavra que acabou de digitar.
+
+    Apresente para o usuário se a LETRA que ele quer procurar existe ou não na palavra digitada e qual a primeira posição da LETRA na PALAVRA.
+    */
+
+    //ENTRADA
+    const palavra = prompt("Insira uma palavra").toLowerCase()
+    const letra = prompt("Insira uma letra que deseja encontrar").toLowerCase()
+
+    //PROCESSAMENTO
+    const letras = palavra.split('')
+    localizacao = letras.indexOf(letra)
+    if (localizacao >= 0) {
+        alert("Esta letra existe e sua primeira localização no caracter " + (localizacao + 1))
+    } else {
+        alert("Esta letra não esta presente nesta palavra")
+    }
+
+    //SAÍDA
+
+    // USEI localizacao+1 pois o usuario não saberia geralmente onde esta o caracter 0, então acredito que deve ser usado +1 para contextuliazar
+
+</script>

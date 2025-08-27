@@ -1,0 +1,65 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: LOJA DE VEÍCULOS
+    Crie os seguintes arrays:
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    
+    Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
+
+    Apresente a lista final de cada tipo de veículo.
+    */
+
+    //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    const questao1 = prompt("Qual carro deseja inserir?")
+    const questao2 = prompt("Qual carro deseja inserir?")
+    const questao3 = prompt("Qual carro deseja inserir?")
+    const marca1 = prompt("Qual é a marca do primeiro carro? SUV, Sedan ou Hatch").toUpperCase()
+    const marca2 = prompt("Qual é a marca do segundo carro? SUV, Sedan ou Hatch").toUpperCase()
+    const marca3 = prompt("Qual é a marca do terceiro carro? SUV, Sedan ou Hatch").toUpperCase()
+
+    //PROCESSAMENTO
+    if (marca1 == "SUV") {
+        carrosSUV.push(questao1)
+    } else if (marca1 == "SEDAN") {
+        carrosSedan.push(questao1)
+    } else if (marca1 == "HATCH") {
+        carrosHatch.push(questao1)
+    } else {
+        alert("Tente Novamente e Coloque uma Marca Valida")
+    }
+
+
+    if (marca2 == "SUV") {
+        carrosSUV.push(questao2)
+    } else if (marca2 == "SEDAN") {
+        carrosSedan.push(questao2)
+    } else if (marca2 == "HATCH") {
+        carrosHatch.push(questao2)
+    } else {
+        alert("Tente Novamente e Coloque uma Marca Valida")
+    }
+
+
+    if (marca3 == "SUV") {
+        carrosSUV.push(questao3)
+    } else if (marca3 == "SEDAN") {
+        carrosSedan.push(questao3)
+    } else if (marca3 == "HATCH") {
+        carrosHatch.push(questao3)
+    } else {
+        alert("Tente Novamente e Coloque uma Marca Valida")
+    }
+
+
+    //SAÍDA
+    alert("Lista de Carros SUV: " + carrosSUV.join(" - "))
+    alert("Lista de Carros Sedan: " + carrosSedan.join(" - "))
+    alert("Lista de Carros Hatch: " + carrosHatch.join(" - "))
+
+</script>

@@ -1,0 +1,21 @@
+<script>
+    /*
+    Somar Números Ímpares
+    Dado o Array [33, 5, 88, 12, 91, 25], peça para o usuário inserir um novo número no Array.
+    Depois, usando for...of, encontre qual é a quantidade de números ímpares presentes no Array.
+    Apresente para o usuário a quantidade de números ímpares.
+    */
+
+    let array = [33, 5, 88, 12, 91, 25]
+    let numero = Number(prompt("Insira um numero"))
+    array.push(numero)
+    let quantidade = 0
+
+    for (let item of array) {
+        let par = item % 2
+        if (par != 0) {
+            quantidade++
+        }
+    }
+    alert("A quantidade dos impares presentes no Array é: " + quantidade)
+</script>

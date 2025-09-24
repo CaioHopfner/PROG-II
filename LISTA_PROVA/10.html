@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    /* Considere a seguinte lista de cidades: ["Recife", "Salvador", "Rio de Janeiro", "São Paulo", "Manaus"].
+    Peça para o usuário para digitar uma letra. 
+    Usando for...of, crie um novo array contendo apenas as cidades da lista original que começam com a letra informada pelo usuário.
+    Ao final, exiba o novo array com as cidades que atenderam a condição estabelecida.
+    */
+    let array = ["Recife", "Salvador", "Rio de Janeiro", "São Paulo", "Manaus"]
+    const letra = prompt("Insira apenas UMA letra").toUpperCase()
+    let novoArray = []
+
+    for (item of array) {
+        let soletrado = Array.from(item)
+        let primeiraLetra = soletrado.indexOf(letra)
+
+        if (primeiraLetra == 0) {
+            novoArray.push(item)
+        }
+    }
+    alert("As cidades que tem como primeira letra " + letra + " são: " + novoArray.join(" - "))
+</script>

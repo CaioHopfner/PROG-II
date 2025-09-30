@@ -8,12 +8,10 @@
     Apresente para o usuário qual o número total de nomes longos encontrados.
     */
     let array = ["Ana", "Carlos", "Beatriz", "Augusto", "Fernanda"]
-    let novoNome = prompt("Insira um nome")
-    array.push(novoNome)
+    array.push(prompt("Insira um nome"))
     let quantidade = 0
 
     for (let item of array) {
-        Array.from(item)
         let tamanho = item.length
         if (tamanho > 5) {
             quantidade++

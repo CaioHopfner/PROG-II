@@ -10,10 +10,8 @@
     let novoArray = []
 
     for (item of array) {
-        let soletrado = Array.from(item)
-        let primeiraLetra = soletrado.indexOf(letra)
-
-        if (primeiraLetra == 0) {
+        let primeiraLetra = item.charAt(0)
+        if (primeiraLetra == letra) {
             novoArray.push(item)
         }
     }

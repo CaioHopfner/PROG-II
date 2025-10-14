@@ -7,13 +7,11 @@
     */
 
     let array = [33, 5, 88, 12, 91, 25]
-    let numero = Number(prompt("Insira um numero"))
-    array.push(numero)
+    array.push(Number(prompt("Insira um numero")))
     let quantidade = 0
 
     for (let item of array) {
-        let par = item % 2
-        if (par != 0) {
+        if (item % 2 != 0) {
             quantidade++
         }
     }
